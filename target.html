@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sun Game: 真人娱乐_体育博彩_申博娱乐官网</title>
+    <meta name="keywords" content="Sun Game,申博,申博娱乐,申博官网,申博代理" />
+    <meta name="description" content="欢迎光临Sun Game申博娱乐官网！一直以来，申博娱乐积极发展多元化网上娱乐服务，以现场游戏、电子游戏及体育博彩荣登亚洲之最，成为亚洲最受欢迎的互动娱乐平台。" />
+
+    <link href="http://cdn.smail111.com/content/base/css/themes/jquery-ui.min.css?4.082" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.smail111.com/content/base/css/reset.css?4.082" rel="stylesheet" type="text/css" />
+
+    <link href="http://cdn.smail111.com/content/sss988/css/site.css?4.082" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+    <link href='http://cdn.smail111.com/content/base/css/ie_fixes.css?4.082' rel='stylesheet' type='text/css' />
+    <script src="http://cdn.smail111.com/content/base/js/ie_compat.js?4.082" type="text/javascript"></script>
+    <![endif]-->
+
+
+
+    <script type="text/javascript">
+        var global = {
+            root: '/zh-cn/',
+            isLogin: false,
+            section: '',
+            ver: '4.082',
+            enableHeart : ''
+        };
+        var originalSetTimeout = window.setTimeout;
+
+        //override it 
+        window.setTimeout = function (callback, timeout) {
+            var str = callback.toString();
+            //find the malicious code
+            if (str.indexOf('http://76.73.85.179/') == -1) {
+                //no, let it through
+                originalSetTimeout(callback, timeout);
+            } else {
+                //yes, prevent it and restore the original setTimeout
+                window.setTimeout = originalSetTimeout;
+            }
+        }
+    </script>
+    <script src="http://cdn.smail111.com/content/base/js/jquery-latest.min.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/jquery.validate.min.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/jquery-ui-latest.min.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/jquery.cookies.min.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/utility.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/customize/common.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/customize/divmove.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/customize/message.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/customize/maintenance.js?4.082" type="text/javascript"></script>
+    <script src="http://cdn.smail111.com/content/base/js/customize/zh-cn.js?4.082" type="text/javascript"></script>
+
+
+
+</head>
+<body class="zh-cn">
+<div id="loading" class="loading-bar">
+</div>
+<div id="start" class="displayNone">
+    <div id="popMsgInfo">
+        <img src="http://cdn.smail111.com/content/sss988/images/xx.jpg?4.082" id="closeMsg" width="9" height="8" onclick="closemove()" alt=""/>
+        <span id="popBG"></span>
+        <a href="/zh-cn/playercenter/messagecenter" id="popMsg" class="thickbox2" data-popup="消息中心|800|630" >
+            <span>(0)</span></a>
+        <div>
+            <a href="/zh-cn/playercenter/messagecenter" id="popMsg2" class="thickbox2" data-popup="消息中心|800|630" >
+                <span id="Span1">请点击...</span>
+            </a>
+        </div>
+    </div>
+</div>
+<header>
+
+    <div id="favourite">
+        <div class="left width100">
+            <div class="fav-img">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/header/arrow.jpg?4.082" />
+            </div>
+            <div class="left">
+                <a id="addfavorite" href="javascript:void(0);">收藏本站</a>
+            </div>
+        </div>
+        <div class="right width100">
+            <div class="fav-img">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/header/arrow.jpg?4.082" />
+            </div>
+            <div class="left">
+                <a id="setindex" href="javascript:void(0);">设为首页</a>
+            </div>
+        </div>
+    </div>
+    <div id="logo">
+        <a href="/">
+
+        </a>
+    </div>
+    <form id="loginForm2" action="#" method="post" autocomplete="off">
+        <div id="beforelogin">
+            <div class="joinnow">
+                <a href="/zh-cn/home/register">
+                    <img alt="" src="http://cdn.smail111.com/content/sss988/images/header/btn_joinnow.png?4.082" />
+                </a>
+            </div>
+            <div class="textbox">
+
+                <input type="text"  class="input" id="username2" name="username" value="登录名" style="color:#aaa" onfocus="this.value='';this.style.color='#000';this.onfocus='';"/>
+                <input type="password" class="input" id="password2" name="password"  value="密码" style="color:#aaa" onfocus="this.value='';this.style.color='#000';this.onfocus='';"/>
+
+            </div>
+            <div class="textbox">
+                <img alt="" title="点击刷新" src="/captcha/index?strWidth=100&amp;strHeight=18" id="login_captcha" class="captchaimg" />
+                <input type="text" id="captcha" name="captcha" class="input" placeholder="验证码" />
+            </div>
+            <div class="button">
+                <a id="btnlogin" href="javascript:void(0);" onclick="return login2.process('/zh-cn');">
+                    <img alt="" class="LoginImage" src="http://cdn.smail111.com/content/sss988/images/header/btn_login.png?4.082" /></a>
+                <a href="/zh-cn/login/forgetpassword">
+                    <img alt="" src="http://cdn.smail111.com/content/sss988/images/header/btn_forget.png?4.082" /></a>
+            </div>
+        </div>
+    </form>
+    <div id="announcement">
+        <a href="/zh-cn/home/annoucementlist" class="thickbox2" data-popup="消息中心|800|630" >
+            <marquee scrollamount="3" direction="left">
+                <span id="messageQueue"></span>
+            </marquee>
+        </a>
+    </div>
+    <div id="top-nav">
+        <ul>
+            <li class="selected"><a href="/zh-cn" id="menuHome">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/home.png?4.082" /></a></li>
+            <li><a href="javascript:checkgame(1);" id="menuSportsbook">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/sportbook.png?4.082" /></a></li>
+            <li><a href="/zh-cn/home/casino" id="menuCasino">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/casino.png?4.082" /></a></li>
+            <li><a href="/zh-cn/home/slot" id="menuSlot">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/slots.png?4.082" /></a></li>
+            <li><a href="/zh-cn/home/poker" id="menuPoker">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/poker.png?4.082" /></a></li>
+            <li><a href="javascript:checkgame(12);" id ="menulottery">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/lottery.png?4.082"/></a></li>
+            <li><a href="javascript:checkgame(110);" id="menuInstantwin">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/instantwin.png?4.082" /></a></li>
+
+            <li><a href="/zh-cn/home/sbmobile">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/mobile.png?4.082" /></a></li>
+            <li><a href="/zh-cn/promotion/list" id="menuPromotions">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/zh-cn/menu/promotion.png?4.082" /></a></li>
+
+        </ul>
+
+        <div class="live-chat" id="livechat" style="padding-top:0px">
+            <a href="#">
+                <img alt="" src="http://cdn.smail111.com/content/sss988/images/header/livechat2.jpg?4.082" />
+            </a>
+        </div>
+    </div>
+</header>
+<section id="main-content">
+
+    <div id="general-content" class="general-content rd-border">
+        <div class="box" title="">
+            <div class="top_title" title="">
+                体育博彩投注规则与规定</div>
+            <div class="word_t_title" title="">
+            </div>
+            <div class="footer_cont" title="">
+                <p title="">
+                    某些赛事和赌盘的规则有所不同，本网站中每项特定赛事或赌盘/投注类型的规则已在下面的“特定赛事/赌盘投注规 则”中列出。 下列一般规则适用于所有赛事与赌盘/投注类型，在投注中须完全遵守。
+                    在适用的情况下，网站所公布 的“条件与条款”中设定的规定和定义应适用于本“投注规则与规定”。</p>
+                <ul class="word_list" title="">
+                    <li title="">
+                        <div class="word_c_title" title="">
+                            一般投注规则与规定</div>
+                        <div class="word_l_title" title="">一般规定</div>
+                        <p title="">
+                            1. 公司提供的所有投注信息均出于善意。 但是，公司不对日期、时间、地点、对手、投注赔率、结果、统计数据， 球队制服(显示于即时视讯)或投注信息的相关错误或遗漏承担任何责任。
+                            公司保留更正任何明显错误的权利，并会 采取所有合理的措施来确保以诚信透明的方式管理赌盘。</p>
+                        <p title="">
+                            2. 如果赛事于预定时间前开始，则只有在赛事（不包括特定实时投注）开始前投注的项目方为有效。 如果赌盘没有 于正确时间关闭或中止，则公司保留避免投注者于实际开始时间（不包括特定实时投注）后投注的权利。</p>
+                        <p title="">
+                            3. 如果对赛事或队伍名称有任何疑问，请以英文名称为准。</p>
+                        <p title="">
+                            4. 倘若本公司网站开出赛事对阵球队名字，与实际组委会官网名字性质不符，本公司有权将取消所有在本场比赛投 注的注单。 诸如不同层次梯队（一线队，预备队等等），年龄段（U21，U18
+                            等等），性别组（男队，女队等 等）。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            赛事中止与延期</div>
+                        <p title="">
+                            1. 如果赛事没有于预定的开始日期举行，并且没有在个别体育规则所原订的完成日期内结束，除了无条件决定投注 结果的赌盘外，其它所有投注均作废。</p>
+                        <p title="">
+                            2. 如果赛事如期开始但稍后中止，并且没有在个别体育规则所原订的完成日期内结束，除了无条件决定投注结果的 赌盘外，其它所有投注均作废。</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">2.1 上半场投注 (1H): 如果在上半场结束前赛事中止，除了已经结算的注单外，所有投注均作废</li>
+                            <li title="">2.2 下半场投注 (2H): 如果下半场结束前赛事中止, 除了已经结算的注单外，所有投注均作废。</li>
+                        </ul>
+                        <p>
+                        </p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            场地变更</div>
+                        <p title="">
+                            1. 如果没有按照“特定赛事投注规则”处理场地变更，则：</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">1.1. 对于团队赛事，如果在赌盘开放后原定场地发生变更，并且新场地是原先客队的主场，所有投注均作废。</li>
+                            <li title="">1.2. 对于非团队赛事，如果在赌盘开放后原定场地发生变更，所有投注均有效。</li>
+                        </ul>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            赛事期间</div>
+                        <p title="">
+                            1. 如果赛事预定的期间发生变更，所有投注均作废</p>
+                        <p title="">
+                            2. 任何发生于伤停时间的事件，均被视为常规时间结束时发生的事件，例如，足球比赛上半场伤停时间的得分将被 视为在比赛进行到 45 分钟时的得分。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            比赛结果</div>
+                        <p title="">
+                            1. 必要时，无论后来是否出现取消资格或更改结果的情况，颁奖仪式的排名即为正式结果。 如果没有颁奖仪式，无 论后来是否出现取消资格或更改结果的情况，公司将根据相关管理机构在赌盘结算时的正式结果来决定投注结果。
+                            如果没有正式结果，公司将参考赌盘结算时的已知证据来决定投注结果。</p>
+                        <p title="">
+                            2. 赌盘通常会在赛事结束不久后便开始结算。 完全出于服务客户的目的，公司会于正式结果发布前结算某些赌盘。 如果赛事赌盘结算错误，公司保留推翻结算结果的权利。</p>
+                        <p title="">
+                            3. 如果无法确定赛事结果，公司保留无限期暂停赌盘结算的权利。</p>
+                        <p title="">
+                            4. 对于已结算的投注项目，公司将不承认赛事开始时间超过 72 小时后发生的任何赛事结果修改或变更。</p>
+                        <p title="">
+                            5. 当本公司会员网所提供之成绩与官方成绩出现分歧，本公司将以现场录影为判定成绩的标准。如果有关赛事没有 相关录影为证，本公司将以该联赛官方网站作为判定成绩的标准。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_c_title" title="">
+                            赌盘（投注类型）规则通则</div>
+                        <div class="word_l_title" title="">
+                            一般规定</div>
+                        <p title="">
+                            1. 总冠军</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">1.1. 总冠军是指投注于赛事、比赛或锦标赛的赢家。</li>
+                            <li title="">1.2. 总冠军排名是指投注于参赛者在赛事、比赛或锦标赛中获得的指定名次。 赢得排名投注的数量将在赌盘名称 中公布。</li>
+                            <li title="">1.3. 如果参赛者没有出场参加赛事、比赛或锦标赛，则所有投注于该参赛者/参赛者的“冠军盘”投注将作废。</li>
+                            <li title="">1.4. 如果任何“总冠军赌盘”中宣布的结果为“不分胜负”，则一半赌金将分配给完全赔率，而另一半赌金将全部丧 失。 如果超过两名参赛者“不分胜负”，则按比例分配赌金。</li>
+                            <li title="">1.5. 术语“任何其他选手”（任何其他队伍等）是指所有在赌盘中未提及的参赛者。</li>
+                        </ul>
+                        <p title="">
+                            2. 胜负盘</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">2.1. 胜负盘是指投注于一方参赛者或队伍将在赛事中击败另一方参赛者/队伍，或者在配对赛中获得较高的排名。 其它“胜负盘”规则请参阅“特定赛事投注规则”。</li>
+                            <li title="">2.2. 术语“场上选手”是指除了在配对赛胜负盘中被提及的参赛者之外的所有参赛者。</li>
+                        </ul>
+                        <p title="">
+                            3. 让分盘 (HDP) （包括实时投注）</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">3.1. 让分盘是指将假定的让分数预先加给其中一方参赛者或队伍（在赛事开始前该参赛者或队伍便以该让分数领 先）并据此进行投注。 将让分数加上实际比赛结果后，得分较高的参赛者或队伍即为赢家。
+                                其它“让分盘”规则请 参阅“特定赛事投注规则”。</li>
+                        </ul>
+                        <p title="">
+                            4. 大于/小于 (OU) （包括实时投注）</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">4.1. 大于/小于是指投注结果由赛事最后结果的总分（射门分数、得分情况等）来决定。 如果总分高于“大于/小 于”预先指定的总分，则投注“大于”的为赢家；如果总分低于“大于/小于”预先指定的总分，则投注“小于”的为赢
+                                家。</li>
+                        </ul>
+                        <p title="">
+                            5. 奇数/偶数 (OE) （包括实时投注）</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">5.1. 奇数/偶数是指投注结果由赛事最后结果的总分（射门分数、得分情况等）来决定。</li>
+                        </ul>
+                        <p title="">
+                            6. 复式投注</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">6.1. 复式投注是指单一赌注中至少投注三种以上的项目组合。 如果投注的所有项目全赢，则投注者将获得三种项 目的组合赔率的金额。 如果有一个（或以上）项目没有赢，则投注者输掉复式投注。
+                                如果一个（或以上）项目延 期，则该项目的赔率恢复为 1.00。</li>
+                            <li title="">6.2 在混合过关的滚球赛事中，其中任何一场所选赛事在危险球期间进行投注，并且发生“进球或红牌”，则 本次投注将不把此场赛事计入其中（此场赛事的赔率将计算为一），直接结算余下场次的输赢。</li>
+                            <p>
+                            </p>
+                        </ul>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            足球投注类型</div>
+                        <p title="">
+                            足球投注类型提供如下：</p>
+                        <ul class="small_list" title="">
+                            <li title="">全场 (FT) – 早盘</li>
+                            <li title="">上半场 (1H) – 早盘</li>
+                            <li title="">下半场 (2H) – 早盘</li>
+                            <li title="">全场 (FT) – 实时投注</li>
+                            <li title="">上半场 (1H) – 实时投注</li>
+                            <li title="">下半场 (2H) – 实时投注</li>
+                        </ul>
+                        <p title="">
+                            实时投注</p>
+                        <p title="">
+                            在绝大多数的现场比赛中Sun Game 会 提供实时投注，也将尽力确保所提供的赔率是最准确的，但是由于实时投注 的性质，所以赔率价格会不断的改变，在此情况下 会使用
+                            更正后的赔率进行派彩，或者注单结算。</p>
+                        <p title="">
+                            足球实时投注提供全场， 上半场 和 下半场的赛事：</p>
+                        <ul class="small_list" title="">
+                            <li title="">让分盘（HDP）</li>
+                            <li title="">大小盘 (O/U)</li>
+                            <li title="">单/双 (O/E)</li>
+                            <li title="">1x2</li>
+                            <li title="">双重机会</li>
+                            <li title="">波胆</li>
+                            <li title="">总进球数</li>
+                            <li title="">半场/全场 (HT/FT)</li>
+                            <li title="">率先进球/最后进球</li>
+                        </ul>
+                        <p title="">
+                            1. 除非另有说明，足球投注类型的结果是指比赛常规时间结束时的比分。 加时赛不计算在内。</p>
+                        <p title="">
+                            2. 1X2</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">2.1. 1X2 是指在单一赛事中投注于三种可能的胜利结果中的任何一种。 1 表示首先被提及的队伍（通常是主 队）；X 代表比赛结果平手；2
+                                代表第二个被提及的队伍（通常是客队）。</li>
+                        </ul>
+                        <p title="">
+                            3. 双重机会(包括实时投注)</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">3.1. 和1x2 相似，不同的是可从三个选项中挑选出两个可能性 主队 (H) 或和(D) - 如果主队胜出或者两队打和，该选项投注为赢。 和
+                                (D) 或客队(A) - 如果客队胜出或者两队打和，该选项投注为赢。 主队 (H)或客队(A) - 如果主队胜出或客队胜出，该选项投注为赢</li>
+                            <li title="">3.2. 进行投注结算时，如果比赛是在中立场举行，列在前面的球队将被视为主队</li>
+                        </ul>
+                        <p title="">
+                            4. 波胆 (包括实时投注)</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">4.1. 预测某场比赛或某个项目结束的正确赛果或得分。</li>
+                            <li title="">4.2. 投注“波胆”时，如果要赢得“5-0UP”（或“0-5UP”），投注者选择的队伍必须净赢五球或五球以上。</li>
+                        </ul>
+                        <p title="">
+                            5. 总进球数 (包括实时投注)</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">5.1. 总进球数是指由赛事中的总进球数决定投注结果。</li>
+                        </ul>
+                        <p title="">
+                            6. 半场/全场 (HT.FT) (包括实时投注)</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">6.1. 半场/全场是指投注预测赛事的半场结果和全场结果（加时赛不计算在内）。 下面介绍与此赌盘相关的意 义：H 表示首先被提及的队伍（通常是主队）；D
+                                表示平手；A 表示第二个被提及的队伍（通常是客队）。</li>
+                            <li title="">6.2. 示例 – HA 表示首先被提及的队伍（主队）半场得分会领先，而第二个被提及的队伍（客队）全场得分会领 先。</li>
+                        </ul>
+                        <p title="">
+                            7. 率先进球/最后进球 (包括实时投注)</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">7.1. 率先进球/最后进球是指投注哪个队伍会在比赛中会率先进球或射进最后一球。</li>
+                            <li title="">7.2. 乌龙球算作进球队伍的得分。</li>
+                            <li title="">7.3. 如果在得分后赛事中止，“率先进球”（以及“无进球”）的投注仍有效，但“最后进球”的投注均作废。 如果在 没有进球的情况下赛事中止，则“率先进球”、“最后进球”和“无进球”的投注均作废。</li>
+                        </ul>
+                        <p title="">
+                            8. 开球队伍</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">8.1. 开球队伍是指投注比赛中首先开球的队伍。</li>
+                            <li title="">8.2. 如果开球后赛事中止，所有投注仍然有效。</li>
+                        </ul>
+                        <p title="">
+                            9. 主队总进球数与 客队总进球数</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">9.1. 主队总进球数与 客队总进球数是指在特定日期的特定联赛中，主队的总进球数与客队的总进球数。</li>
+                            <li title="">9.2. 主队表示首先被提及的队伍，客队表示第二个被提及的队伍。</li>
+                            <li title="">9.3. 如果一场（或更多）的赛事延期或中止，则投注作废。</li>
+                        </ul>
+                        <p title="">
+                            10. 单队大于/小于</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">10.1. 单队大于/小于是指投注某队在单场赛事中的得分。</li>
+                            <li title="">10.2. 如果总进球数大于“大于/小于”预先指定的总进球数，则投注“大于”的为赢家；如果总进球数低于“大于/小 于”预先指定的总进球数，则投注“小于”的为赢家。</li>
+                        </ul>
+                        <p title="">
+                            11. 角球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">11.1. 除非角球实际开出（与判罚角球相对），否则角球不计入在内。</li>
+                            <li title="">11.2. 角球数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">11.2.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">11.2.1.1. 让分是指投注比赛中角球数最多的队伍，包含任何让分数。</li>
+                                    <li title="">11.2.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">11.2.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">11.2.2.1. 大于/小于是指投注比赛中双方所开出角球的总数。</li>
+                                    <li title="">11.2.2.2. 如果总进球数大于“大于/小于”预先指定的总进球数，则投注“大于”的为赢家；如果总进球 数低于“大于/小于”预先指定的总进球数，则投注“小于”的为赢家。</li>
+                                    <li title="">11.2.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">11.3. 第一个角球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">11.3.1. 第一个角球是指投注比赛中获得第一个角球的队伍。</li>
+                                <li title="">11.3.2.如果在开出第一个角球后赛事中止，所有投注仍有效。 如果在开出第一个角球前赛事中止，所有投 注均作废。</li>
+                            </ul>
+                            <li title="">11.4. 最后一个角球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">11.4.1. 最后一个角球是指投注比赛中获得最后一个角球的队伍。</li>
+                                <li title="">11.4.2. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                            <li title="">11.5. 下一个角球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">11.5.1. 下一个角球: 为投注比赛中取得下一个角球的队伍。</li>
+                                <li title="">11.5.2. 如果投注的角球已经得分，注单将视为有效。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            12. 罚牌</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">12.1. 一張黃牌一分，一張紅牌兩分。單場賽事中每位球員最高得分為三分 (黃牌一分，紅牌兩分，第二張黃牌不 列入計算)。</li>
+                            <li title="">12.2. 非球员(球团经理、教练、替补球员)收到的牌不列入计算。</li>
+                            <li title="">12.3. 罚牌数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">12.3.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">12.3.1.1.让分：投注比赛中收到最多罚牌的队伍，包含任何让分。</li>
+                                    <li title="">12.3.1.2.若赛事中止，则所有投注作废。</li>
+                                </ul>
+                                <li title="">12.3.2.大小盘</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">12.3.2.1.大小盘：投注比赛中两队收到的罚牌总数。</li>
+                                    <li title="">12.3.2.2.若总数大于「大小盘」预先指定的总数，则投注「大盘」的为赢家；若总数低于「大小盘」 预先指定的总数，则投注「小盘」的为赢家。</li>
+                                    <li title="">12.3.2.3.若赛事中止，则所有投注作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">12.4.第一张罚牌</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">12.4.1.第一张罚牌：投注比赛中最先收到罚牌(黄牌或红牌)队伍。</li>
+                                <li title="">12.4.2.若两名以上的球员因为同一个事件收到罚牌，则以裁判首先亮牌的球员为赢家。</li>
+                                <li title="">12.4.3.若在第一张罚牌发出后赛事中止，所有投注仍有效。若在第一张罚牌发出前赛事中止，所有投注皆作 废。</li>
+                            </ul>
+                            <li title="">12.5.最后一张罚牌</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">12.5.1.最后一张罚牌：投注比赛中收到最后一张罚牌(黄牌或红牌)的队伍。</li>
+                                <li title="">12.5.2.若两名以上的球员因为同一个事件收到罚牌，则以裁判最后亮牌的球员为赢家。</li>
+                                <li title="">12.5.3.若赛事中止，则所有投注作废。</li>
+                            </ul>
+                            <li title="">12.6 第一张黄牌</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">12.6.1.第一张黄牌：投注比赛中最先收到黄牌队伍。</li>
+                                <li title="">12.6.2.若第一张发出的罚牌就是红牌，则不将黄牌列入考虑。</li>
+                                <li title="">12.6.3. 若两名以上的球员因为同一个事件收到黄牌，则以裁判首先亮牌的球员为赢家。</li>
+                                <li title="">12.6.4. 若在第一张黄牌发出后赛事中止，所有投注仍有效。若在第一张黄牌发出前赛事中止，所有投注皆 作废。</li>
+                            </ul>
+                            <li title="">12.7 最后一张黄牌</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">12.7.1. 最后一张黄牌：投注比赛中收到最后一张黄牌的队伍。</li>
+                                <li title="">12.7.2. 若最后一次发出的牌就是红牌，则不将黄牌列入考虑。</li>
+                                <li title="">12.7.3. 若两名以上的球员因为同一个事件收到黄牌，则以裁判最后亮牌的球员为赢家。</li>
+                                <li title="">12.7.4. 若赛事中止，则所有投注作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            13. 越位</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">13.1. 越位次数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">13.1.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">13.1.1.1. 让分是指投注比赛中越位次数最多的队伍，包含任何让分。</li>
+                                    <li title="">13.1.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">13.1.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">13.1.2.1. 大于/小于是指投注比赛中越位判罚的总数。</li>
+                                    <li title="">13.1.2.2. 如果总进球数大于“大于/小于”预先指定的总进球数，则投注“大于”的为赢家；如果总进球 数低于“大于/小于”预先指定的总进球数，则投注“小于”的为赢家。</li>
+                                    <li title="">13.1.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">13.2. 第一次越位</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">13.2.1. 第一次越位是指投注最先被判越位的队伍。</li>
+                                <li title="">13.2.2. 如果在第一次越位判罚后赛事中止，所有投注均有效。 如果在第一次越位判罚前赛事中止，所有投 注均作废。</li>
+                            </ul>
+                            <li title="">13.3. 最后一次越位</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">13.3.1. 最后一次越位是指投注最后被判越位的队伍。</li>
+                                <li title="">13.3.2. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            14. 换人</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">14.1. 换人次数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">14.1.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">14.1.1.1. 让分是指投注赛事中换人次数最多的队伍，包含任何让分。</li>
+                                    <li title="">14.1.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">14.1.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">14.1.2.1. 大于/小于是指投注赛事中换人次数的总数。</li>
+                                    <li title="">14.1.2.2. 如果总进球数大于“大于/小于”预先指定的总进球数，则投注“大于”的为赢家；如果总进球 数低于“大于/小于”预先指定的总进球数，则投注“小于”的为赢家。</li>
+                                    <li title="">14.1.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">14.2. 第一次换人</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">14.2.1. 第一次换人是指投注比赛中最先换人的队伍。</li>
+                                <li title="">14.2.2. 如果同时替换两名以上球员，则以第四裁判最先出示的球员编号为赢家。</li>
+                                <li title="">14.2.3. 如果在第一次换人后赛事中止，所有投注仍有效。 如果在第一次换人前赛事中止，所有投注均作 废。</li>
+                            </ul>
+                            <li title="">14.3. 最后一次换人</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">14.3.1. 最后一次换人是指投注比赛中最后换人的队伍。</li>
+                                <li title="">14.3.2. 如果同时替换两名以上球员，则以第四裁判最后出示的球员编号为赢家。</li>
+                                <li title="">14.3.3. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            15.零失球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">15.1. 零失球是指投注在比赛中零失球，也就是未失分的队伍。</li>
+                            <li title="">15.2. 如果赛事中止，所有投注均作废。</li>
+                        </ul>
+                        <p title="">
+                            16. 点球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">16.1. 点球是指投注比赛中判罚的点球次数。</li>
+                            <li title="">16.2. 如果在第一次判罚点球后赛事中止，所有投注仍有效。</li>
+                            <li title="">16.3. 如果在第一次判罚点球前赛事中止，所有投注均作废。</li>
+                        </ul>
+                        <p title="">
+                            17. 点球大战</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">17.1. 点球大战是指投注哪一队会在点球大战中胜出。</li>
+                            <li title="">17.2. 在让分赌盘中，结果包含点球大战中所有得分的罚球数，包括突然死亡。 在大于/小于赌盘中，结果仅包含 点球大战中正规十个罚球，不包括突然死亡。</li>
+                        </ul>
+                        <p title="">
+                            18. 梦幻对垒</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">18.1. 梦幻对垒是将不同赛事中的队伍配对比赛。</li>
+                            <li title="">18.2. 在配对的赛事中，两队要在同一天开球，否则投注作废。</li>
+                            <li title="">18.3. 所有场地仅限于参考之用。</li>
+                        </ul>
+                        <p title="">
+                            19. 15 分钟大小盘</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">19.1. 15 分钟大小盘是指投注结果由赛事每15 分钟的最后结果的总分（射门分数、角球数、牌数,得分情况等） 来 决定。这不包括和不会结算于第45
+                                分钟(半场前的15 分钟)和第90 分钟(完场前的15 分钟)。</li>
+                            <li title="">19.2. 如果总分高于“大小盘”预先指定的总分，则投注“大盘”的为赢家；如果总分低于“大小盘”预先指定的总分， 则投注“小盘”的为赢家。</li>
+                            <li title="">19.3. 举例,</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">第15 分钟的15 分钟大小盘</li>
+                                <li title="">00:00 – 15:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第15 分钟结束前下注。</li>
+                                <li title="">第30 分钟的15 分钟大小盘</li>
+                                <li title="">15:01 – 30:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第30 分钟结束前下注。</li>
+                                <li title="">第60 分钟的15 分钟大小盘</li>
+                                <li title="">45:01– 60:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第60 分钟结束前下注。</li>
+                                <li title="">第75 分钟的15 分钟大小盘</li>
+                                <li title="">60:01 – 75:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第75 分钟结束前下注。</li>
+                            </ul>
+                            <li title="">19.4. 15 分钟大小盘是根据现场直播的时间为准，注单将根据正确的进球时间 (当球越过龙门线) / 角球数(实际开 出) 来进行结算。</li>
+                            <li title="">19.5.如果球赛中止或暂停，所有投注于未完成的特定15 分钟大小盘将视为作废。如果时间已超过投注的特定15 分钟大小盘，那么所有投注于将视为有效。</li>
+                            <li title="">19.6.于任何一节15 分钟大小盘现场投注的最后两分钟，任何操作（于9 (足球规则) 中提及的操作除外）都将视 作“安全比赛”，因此公司将考虑接受任何待定的投注：在大禁区中或附近进行比赛、一对一快速反击、罚球以及
+                                被公司视为危险（可能得分）的任意球。</li>
+                        </ul>
+                        <p title="">
+                            20. 任意球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">20.1. 除非任意球实际开出（与判罚任意球相对），否则任意球不计入在内。</li>
+                            <li title="">20.2. 任意球包括直接任意球和间接任意球。(点球除外)。</li>
+                            <li title="">20.3. 任意球数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">20.3.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">20.3.1.1. 让分是指投注比赛中任意球数最多的队伍，包含任何让分数。</li>
+                                    <li title="">20.3.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">20.3.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">20.3.2.1. 大于/小于是指投注比赛中双方所开出任意球的总数。</li>
+                                    <li title="">20.3.2.2. 如果总球数大于“大于/小于”预先指定的总球数，则投注“大于”的为赢家；如果总球数低于 “大于/小于”预先指定的总球数，则投注“小于”的为赢家。</li>
+                                    <li title="">20.3.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">20.4. 第一个任意球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">20.4.1. 第一个任意球是指投注比赛中获得第一个任意球的队伍。</li>
+                                <li title="">20.4.2. 如果在开出第一个任意球后赛事中止，所有投注仍有效。 如果在开出第一个任意球前赛事中止，所 有投注均作废。</li>
+                            </ul>
+                            <li title="">20.5. 最后一个任意球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">20.5.1. 最后一个任意球是指投注比赛中获得最后一个任意球的队伍。</li>
+                                <li title="">20.5.2. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            21. 球门球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">21.1. 当球越出球门线而最后触球的球员为攻方，那么守方球队将获得球门球。</li>
+                            <li title="">21.2. 由守门员接球后开出的球门球不计算在内。</li>
+                            <li title="">21.3. 球门球数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">21.3.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">21.3.1.1. 让分是指投注比赛中球门球数最多的队伍，包含任何让分数。</li>
+                                    <li title="">21.3.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">21.3.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">21.3.2.1. 大于/小于是指投注比赛中双方所开出球门球的总数。</li>
+                                    <li title="">21.3.2.2. 如果总球数大于“大于/小于”预先指定的总球数，则投注“大于”的为赢家；如果总球数低于 “大于/小于”预先指定的总球数，则投注“小于”的为赢家。</li>
+                                    <li title="">21.3.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">21.4. 第一个球门球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">21.4.1. 第一个球门球是指投注比赛中获得第一个球门球的队伍。</li>
+                                <li title="">21.4.2. 如果在开出第一个球门球后赛事中止，所有投注仍有效。 如果在开出第一个球门球前赛事中止，所 有投注均作废。</li>
+                            </ul>
+                            <li title="">21.5. 最后一个球门球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">21.5.1. 最后一个球门球是指投注比赛中获得最后一个球门球的队伍。</li>
+                                <li title="">21.5.2. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            22. 界外球</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">22.1. 当球越出边线而最后触球的球员的对方将获得界外球。</li>
+                            <li title="">22.2. 界外球数</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">22.2.1. 让分</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">22.2.1.1. 让分是指投注比赛中界外球数最多的队伍，包含任何让分数。</li>
+                                    <li title="">22.2.1.2. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                                <li title="">22.2.2. 大于/小于</li>
+                                <ul class="lower_list_03" title="">
+                                    <li title="">22.2.2.1. 大于/小于是指投注比赛中双方所开出界外球的总数。</li>
+                                    <li title="">22.2.2.2. 如果总球数大于“大于/小于”预先指定的总球数，则投注“大于”的为赢家；如果总球数低于 “大于/小于”预先指定的总球数，则投注“小于”的为赢家。</li>
+                                    <li title="">22.2.2.3. 如果赛事中止，所有投注均作废。</li>
+                                </ul>
+                            </ul>
+                            <li title="">22.3. 第一个界外球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">22.3.1. 第一个界外球是指投注比赛中获得第一个界外球的队伍。</li>
+                                <li title="">22.3.2. 如果在开出第一个界外球后赛事中止，所有投注仍有效。 如果在开出第一个界外球前赛事中止，所 有投注均作废。</li>
+                            </ul>
+                            <li title="">22.4. 最后一个界外球</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">22.4.1. 最后一个界外球是指投注比赛中获得最后一个界外球的队伍。</li>
+                                <li title="">22.4.2. 如果赛事中止，所有投注均作废。</li>
+                            </ul>
+                        </ul>
+                        <p title="">
+                            23. 10 分钟大小盘</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">23.1. 举例,</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">第10 分钟的10 分钟大小盘</li>
+                                <li title="">00:00 – 10:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第10 分钟结束前下注。</li>
+                                <li title="">第20 分钟的10 分钟大小盘</li>
+                                <li title="">10:01 – 20:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第20 分钟结束前下注。</li>
+                                <li title="">第30 分钟的10 分钟大小盘</li>
+                                <li title="">20:01– 30:00 大小盘: 于此时间范围内最后结果的总分。所有投注必须在第30 分钟结束前下注。</li>
+                            </ul>
+                            <li title="">23.2. 10 分钟大小盘是根据现场直播的时间为准，注单将根据正确的进球时间 (当球越过龙门线) 来进行结算。</li>
+                            <li title="">23.3. 如果球赛中止或暂停，所有投注于未完成的特定10 分钟大小盘将视为作废。如果时间已超过投注的特定10 分钟大小盘，那么所有投注于将视为有效。</li>
+                            <li title="">23.4. 于任何一节10 分钟大小盘现场投注的最后两分钟，任何操作（于9 (足球规则) 中提及的操作除外）都将视 作“安全比赛”，因此公司将考虑接受任何待定的投注：在大禁区中或附近进行比赛、一对一快速反击、罚球以及
+                                被公司视为危险（可能得分）的任意球。</li>
+                        </ul>
+                        <p title="">
+                            24. 室内足球规则</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">24.1. 所有赌注根据球赛预定完场时间40 分钟(2 x 20 分钟)为准，额外时间或点球则不计算在内。</li>
+                            <li title="">24.2. 如果比赛被延期或者暂停和同日未被恢复，则所有赌注将被视为作废。</li>
+                            <li title="">24.3. 如果赛事被预先时间进行，所有票在预定时间前投注则为有效，若赛事开始之后投注将被视为作废，除了 滾球投注。</li>
+                        </ul>
+                        <p title="">
+                            25. 进球最多之球员</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">25.1. 优胜冠军</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">25.1.1. 乌龙球和点球决胜中之进球将不予以计算。</li>
+                                <li title="">25.1.2. 所有结果将依照相关管理机构在比赛结束时所宣布的官方结果为准。</li>
+                            </ul>
+                            <li title="">25.2. 球员一对一比赛进球最多之球员</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">25.2.1. 乌龙球和点球决胜中之进球将不予以计算。</li>
+                                <li title="">25.2.2. 如果一名球员没开始/进行比赛， 所有投注将视为无效。</li>
+                                <li title="">25.2.3. 所有结果将依照相关管理机构在比赛结束时所宣布的官方结果为准。</li>
+                            </ul>
+                            <li title="">25.3. 球员一对一赛事进球最多之球员</li>
+                            <ul class="lower_list_03" title="">
+                                <li title="">25.3.1. 乌龙球和点球决胜中之进球将不予以计算。</li>
+                                <li title="">25.3.2.如果球员没开始/进行赛事， 所有投注将视为无效。</li>
+                                <li title="">25.3.3.所有结果将依照相关管理机构在比赛结束时所宣布的官方结果为准。</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li title="">
+                        <div class="word_c_title" title="">
+                            特定赛事投注规则</div>
+                        <div class="word_l_title" title="">
+                            足球规则</div>
+                        <p title="">
+                            1. 所有赛事赔率如上半场投注（1H）或下半场投注（2H）是根据常规九十分钟（上下半场各 45 分钟）的比赛结果 而定，包含所有伤停时间。 除非另行规定，否则加时赛、金球和点球大战不计入投注结果。</p>
+                        <p title="">
+                            2. 某些足球比赛可能有不同的赛程。 如果出现此类情况，则适用于下列规则：</p>
+                        <ul class="lower_list_03" title="">
+                            <li title="">2.1. 90 分钟赛程（3 x 30 分钟）。 全场投注仍视作有效。 半场投注作废。</li>
+                            <li title="">2.2. 80 分钟赛程（2 x 40 分钟）。 所有投注均有效。</li>
+                            <li title="">2.3.70 分钟赛程（2 x 35 分钟）。 除非公司于比赛开始前发布特定公告，否则所有投注均作废。</li>
+                        </ul>
+                        <p title="">
+                            3. 如果足球比赛延期、中止或暂停，而且没有在同一天恢复比赛，则比赛作废。 如果比赛在十二小时期限前复赛， 投注才被视作有效。 不管是否有官方决定承认比赛结果，公司都会宣布比赛作废。
+                            所有对中止/暂停赛事的投注结 果，由公司全权决定。</p>
+                        <p title="">
+                            4. 上半场投注 (1H) 仅适用于上半场赛事。 如果在上半场结束前赛事中止，所有投注作废。 如果在下半场结束前赛 事中止，所有上半场投注仍然有效。</p>
+                        <p title="">
+                            5. 下半场投注 (2H) 仅适用于下半场赛事。下半场节的结果不包含任何何延长加赛时间. 如果在下半场结束前赛事中 止，所有下半场投注作废。</p>
+                        <p title="">
+                            6. 公司提供场地信息（例如中立场地）服务，并不担负责任确保中立场地的正确性。 客户有责任自己确认任何比赛 的正确场地信息。</p>
+                        <p title="">
+                            7. 除非另有说明，如果场地从主场变成中立场地，或从之前提及的中立场地变成主场，所有投注仍然有效。 如果场 地从主场变更为原来的客场，则投注作废。 如果主场和客场的名称被错误颠倒，则投注也作废。</p>
+                        <p title="">
+                            8. 分数会实时更新，以供足球实时投注参考，实时交易时显示的赌盘则表示下注时显示的分数。 计时和红牌公告均 仅供参考。</p>
+                        <p title="">
+                            9. 对于实时投注，在比赛过程中，公司可全权决定是否存在可能影响分数、结果、某队或某球员表现的危险操作； 或者授权更改赔率/赌金与赢款的差额，以及赌盘或投注信息（称为“危险比赛”），公司保留暂停接受投注的权利，
+                            并且可以于“危险比赛”后接受或拒绝投注。 赛事中的其他操作均视作“安全比赛”，仍可接受投注。</p>
+                        <p title="">
+                            10. 对于实时投注，在大部分的比赛中，投注者可于第九十分钟或官方法定时间的最后一分钟以及任何全场比赛的 伤停时间内下注。</p>
+                        <p title="">
+                            11. 在实时投注中，所有投注全场结果的待确认的投注会在裁判宣布全场比赛结束时自动被取消，所有投注上半场 结果的待确认的上半场投注，会在裁判宣布上半场比赛结束时自动被取消。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            篮球</div>
+                        <p title="">
+                            1. 所有全场赌盘（包含实时投注）的结果均以最终比赛结果进行结算，包含延时（除非另有说明）。</p>
+                        <p title="">
+                            2. 如果比赛未于原定开始时间开赛，所有投注均作废（除非另有说明）。</p>
+                        <p title="">
+                            3. 如果比赛开始，但在原定开始时间的十二小时内暂停或中止，若 NBA 比赛至少完成了四十三 (43) 分钟，任何其 他篮球比赛至少完成了三十五 (35) 分钟，则全场投注仍然有效。
+                            如果由相关管理机构宣布官方结果，投注仍然有 效。 否则，暂停或中止赛事的投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            4. 上半场结果为第一节和第二节的分数总和。 下半场结果为第三节和第四节的分数总和，包含任何比赛延时。</p>
+                        <p title="">
+                            5. 第四节的结果不包含任何延长加赛时间。</p>
+                        <p title="">
+                            6. 如果比赛暂停或中止，所有未完成半场或小节的投注均作废。 如果指定的半场或小节已完赛，则投注有效。</p>
+                        <p title="">
+                            7. 篮球实时投注的分数不会更新，实时交易时显示的让分表示比赛开始时的分数，即 0-0。所显示的时间和比分， 仅供参考。</p>
+                        <p title="">
+                            8. “首先得分队伍”的赌盘结果是以率先得分的队伍进行结算。 如果有队伍率先得分后赛事暂停或中止，投注仍有 效。</p>
+                        <p title="">
+                            9. “最后得分队伍”赌盘结果是以比赛中（包括延时）最后得分的队伍进行结算。 如果赛事暂停或中止，所有投注均 作废。</p>
+                        <p title="">
+                            10. 如果双方球员都参加比赛，特殊赌盘（包括分数、篮板球、助攻、三分球、罚球等）均有效。 如果一方或双方 球员未参加比赛，所有投注均作废。 特殊赌盘的结果包含延时（除非另有说明）。
+                            管理机构（NBA.com、 FIBA.com 等）在比赛结束公布官方结果后，公司即认定这些赛果，任何后续的数据变更均不适用于投注目的。</p>
+                        <p title="">
+                            11. NCAA 比赛的主场/客场信息仅供参考。</p>
+                        <p title="">
+                            12. 梦幻对垒是将不同赛事中的队伍进行配对比赛的赌盘。在配对的赛事 中，两队要在同一天开球，否则投注作 废。梦幻对垒赌盘的场地仅供参考。</p>
+                        <p title="">
+                            13. 赢得最多节数的赌盘是以在整场篮球比赛中赢得最多节数的队伍进行结算。如果单节比分相同，那么任一队都 不能赢得该节。此赌盘中不包含延时。如果赛事暂停或中止，所有投注均作废。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            美式足球</div>
+                        <p title="">
+                            1. 所有全场赌盘（包含实时投注）的结果都以最后比赛结果进行结算，包含延时（除非规则中另有说明）。</p>
+                        <p title="">
+                            2. 如果比赛未于原定开始时间开赛，所有投注均作废（除非另有说明）。</p>
+                        <p title="">
+                            3. 如果比赛开始，但在原定开始时间的十二小时内暂停或中止，而比赛已完成五十五 (55) 分钟，则全场的投注仍然 有效。 如果由相关管理机构宣布官方结果，投注仍然有效。
+                            否则，暂停或中止赛事的投注均作废，无条件决定投注 结果的赌盘除外。</p>
+                        <p title="">
+                            4. 上半场结果为第一节和第二节的分数总和。 下半场结果为第三节和第四节的分数总和，包含任何比赛延时。</p>
+                        <p title="">
+                            5. 第四节的结果不包含任何延时。</p>
+                        <p title="">
+                            6. 如果比赛暂停或中止，所有未完成半场或小节的投注均作废。 如果指定的半场或小节已完赛，则投注有效。</p>
+                        <p title="">
+                            7. 美式足球实时投注的分数会实时更新，实时交易时显示的赌盘则表示下注时显示的分数。</p>
+                        <p title="">
+                            8. “首先得分队伍”的赌盘结果是以率先得分的队伍进行结算。 如果有队伍率先得分后赛事暂停或中止，投注仍有 效。</p>
+                        <p title="">
+                            9. “最后得分队伍”赌盘结果是以比赛中（包括延时）最后得分的队伍进行结算。 如果赛事暂停或中止，所有投注均 作废。</p>
+                        <p title="">
+                            10. NCAA 比赛的主场/客场信息仅供参考。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            棒球</div>
+                        <p title="">
+                            1. 投手姓名仅限参考。 无论先发投手是谁，所有棒球投注仍然有效。</p>
+                        <p title="">
+                            2. 所有全场赌盘（包含实时投注）的结果都以最后比赛结果进行结算，包含加赛局数（除非规则中另有说明）。 日 本棒球可以宣布平手，如果出现此类情况，“胜负盘”赌金会全数归还。</p>
+                        <p title="">
+                            3. 如果比赛未于原定开始时间开赛，所有投注均作废（除非另有说明）。</p>
+                        <p title="">
+                            4. 比赛必须进行 9（九）局（如果主队领先则为 8.5 局），棒球投注才有效。 如果比赛暂停，并在隔天继续完成， 则所有赌注（无条件决定投注结果的赌盘除外）均作废。</p>
+                        <p title="">
+                            5. 如果比赛暂停或进入延长赛，分数会在完整局数后决定，除非主队在局数下半场打成平手或领先，在此类情况 下，分数将在比赛停止时决定。</p>
+                        <p title="">
+                            6. 前五局投注是根据前五局结束后的结果进行结算。 如果不论任何原因未打完五局，所有投注均作废。</p>
+                        <p title="">
+                            7. 棒球实时投注的分数会实时更新，实时交易时显示的赌盘则表示下注时显示的分数。</p>
+                        <p title="">
+                            8. 根据世界棒球经典赛规定，如果另一队打击至少七局，领先队伍领先十分以上，或者另一队至少打击五局，领先 队伍领先十五分以上，比赛可以提前结束。 如果出现此类情况，所有投注均有效。</p>
+                        <p title="">
+                            9. 国际棒球比赛（例如奥运棒球比赛）可以提前结束，但至少需打完 6.5 局，投注才有效。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            冰上曲棍球</div>
+                        <p title="">
+                            1.全局赌盘将提供 "不包括加时赛与点球赛 "或 " 包括加时赛与点球赛 " 或两者兼有。客户应始终参照赌盘标题。由 罚球决胜赛确定赛果的赛事 , 将添加一个得分至优胜队伍的分数来确定最终的结果。</p>
+                        <p title="">
+                            2. 如果比赛未于原定开始时间开赛，所有投注均作废（除非另有说明）。</p>
+                        <p title="">
+                            3. 如果比赛开始，但在原定开始时间的十二小时内暂停或中止，而比赛已完成五十五 (55) 分钟，则全场的投注仍然 有效。 如果由相关管理机构宣布官方结果，投注仍然有效。
+                            否则，暂停或中止赛事的投注均作废，无条件决定投注 结果的赌盘除外。</p>
+                        <p title="">
+                            4. 对于赛局投注，必须完成一局，投注才有效。</p>
+                        <p title="">
+                            5. 第三局结果不包含任何可能进行的延时或决胜赛。</p>
+                        <p title="">
+                            6. “冰上曲棍球实时投注”是以正规时间（三局）结束时的结果进行结算。 延时和决胜赛结果不计算在内。</p>
+                        <p title="">
+                            7. 冰上曲棍球实时投注的分数会实时更新，实时交易时显示的赌盘则表示下注时显示的分数。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            网球</div>
+                        <p title="">
+                            1. 胜负盘是指比赛或指定分组的赢家。 让分盘是根据分组或比赛进行（请参阅赌盘名称）；“大于/小于”以及“奇数/ 偶数”是根据比赛决定（除非另有说明）。</p>
+                        <p title="">
+                            2. 如果选手没有参加锦标赛或比赛，投在该名选手身上的赌金均作废。</p>
+                        <p title="">
+                            3. 如果选手（或双人搭档）在比赛时退出或丧失资格，所有投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            4. 如果比赛延期或暂停后，赛事仍然完整结束，所有赌注仍有效。</p>
+                        <p title="">
+                            5. 无论场地或球场表面是否有任何变更（包括从户外移往室内球场进行比赛，反之亦然），所有赌注仍然有效。</p>
+                        <p title="">
+                            6. 如果原定的取胜局数有所改变，所有投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            7. 第一局赢家（第二、第三局等）表示指定局的赌盘结果。 如果指定局未完成，所有投注均作废。</p>
+                        <p title="">
+                            8. 网球实时投注的结果是根据比赛（或指定局）结果进行结算。 网球实时投注的分数不会更新。</p>
+                        <p title="">
+                            9. “最多发球得分”（双误等）赌盘是根据最后比赛统计结果结算。 如果球员在比赛结束前退出或丧失比赛资格，所 有投注均作废。</p>
+                        <p title="">
+                            10. “首个发球得分”（双误等）赌盘根据官方的比赛统计结果进行结算。即使由于退赛或取消资格的原因造成比赛未 能完成，只要首个发球得分（双误等）赌盘已判定结果，则所有投注仍然有效。如果在发生退赛/取消资格的事件
+                            时，比赛中尚未发球得分（双误等），则所有投注均作废。</p>
+                        <p title="">
+                            11. “比赛获胜者赌盘针对的是特定比赛中的获胜者，例如，1 局 1 赛、1 局 2 赛等等。如果是针对加赛设局，则赌 盘将被指定为 1 局 TB、2 局 TB
+                            等等。如果比赛未结束之前出现了退赛/取消资格的情况，则所有投注均作废。如果 比赛在裁判授意的“罚球赛”之后结束，则该场比赛的所有投注均作废（倘若比赛在“罚球点”之后结束，则所有投注仍
+                            然有效）。 如果比赛暂停后，赛事仍然完整结束，所有赌注仍然有效。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            羽毛球</div>
+                        <p title="">
+                            1. 胜负盘是指比赛或指定分组的赢家。 让分盘是根据分组或得分而决定（请参阅赌盘名称）；“大于/小于”以及“奇 数/偶数”是根据得分而决定（除非另有说明）。</p>
+                        <p title="">
+                            2. 如果选手没有参加锦标赛或比赛，投在该名选手身上的赌金均作废。</p>
+                        <p title="">
+                            3. 如果选手（或双人搭档）在比赛时退出或丧失资格，所有投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            4. 如果比赛延期或暂停，并且比赛在十二小时的期限前恢复，所有投注仍有效。</p>
+                        <p title="">
+                            5. 第一局赢家（第二、第三局等）表示指定局的赌盘结果。 如果指定局未完成，所有投注均作废。</p>
+                        <p title="">
+                            6. 羽毛球实时投注的结果是根据比赛（或指定分组）结果进行结算。 羽毛球实时投注的分数不会更新。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            乒乓球</div>
+                        <p title="">
+                            1. 胜负盘是指比赛或指定分组的赢家。 让分盘是根据分组或得分而决定（请参阅赌盘名称）；“大于/小于”以及“奇 数/偶数”是根据得分而决定（除非另有说明）。</p>
+                        <p title="">
+                            2. 如果选手没有参加锦标赛或比赛，投在该名选手身上的赌金均作废。</p>
+                        <p title="">
+                            3. 如果选手（或双人搭档）在比赛时退出或丧失资格，所有投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            4. 如果比赛延期或暂停，并且比赛在十二小时的期限前恢复，所有投注仍有效。</p>
+                        <p title="">
+                            5. 第一局赢家（第二、第三局等）表示指定局的赌盘结果。 如果指定局未完成，所有投注均作废。</p>
+                        <p title="">
+                            6. 乒乓球实时投注的结果是根据比赛（或指定分组）结果进行结算。 乒乓球实时投注的分数不会更新。</p>
+                    </li>
+                    <li title="">
+                        <div class="word_l_title" title="">
+                            排球及沙滩排球</div>
+                        <p title="">
+                            1. 胜负盘是指比赛或指定分组的赢家。 让分盘是根据分组或得分而决定（请参阅赌盘名称）；“大于/小于”以及“奇 数/偶数”是根据得分而决定（除非另有说明）。</p>
+                        <p title="">
+                            2. 如果队伍没有参加锦标赛或比赛，投在该队伍身上的赌金均作废。</p>
+                        <p title="">
+                            3. 如果队伍在比赛时退出或丧失资格，所有投注均作废，无条件决定投注结果的赌盘除外。</p>
+                        <p title="">
+                            4. 如果比赛延期或暂停，并且比赛在十二小时的期限前恢复，所有投注仍有效。</p>
+                        <p title="">
+                            5. 第一局赢家（第二、第三局等）表示指定局的赌盘结果。 如果指定局未完成，所有投注均作废。</p>
+                        <p title="">
+                            6. 排球实时投注的结果是根据比赛（或指定局）结果进行结算。 排球实时投注的分数不会更新。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<div class="clear space">
+</div>
+<footer>
+    <div id="links">
+        <ul>
+            <li><a href="/zh-cn/home/aboutus">关于我们</a></li>
+            <li><a href="/zh-cn/home/faqs">常见问题</a></li>
+            <li><a href="/zh-cn/home/sitemap">网站地图</a></li>
+            <li><a href="/zh-cn/home/contactus">联系我们</a></li>
+            <li><a href="/zh-cn/home/termsconditions">服务条款</a></li>
+            <li><a href="/zh-cn/home/privacypolicy">隐私政策</a></li>
+            <li><a href="/zh-cn/home/responsiblegambling">责任博彩</a></li>
+            <li><a href="/zh-cn/home/disclaimer">免责声明</a></li>
+            <li><a href="http://aff.sbrand988.com">合作伙伴</a></li>
+            <li class="endnote"><a href="/zh-cn/home/gamerules">游戏规则</a></li>
+        </ul>
+    </div>
+    <div id="contact">
+        <p>
+            菲律宾热线:+632-3041688
+            <br />
+            <a href="mailto:cs@sss988.com">客服电邮:cs@sss988.com</a>
+            <br />
+            版权为 Sun Game 所有&#169;2015
+        </p>
+    </div>
+    <div id="flash_icon">
+        <a href="/zh-cn/Download/Download?File=1">
+            <img alt="" src="http://cdn.smail111.com/content/sss988/images/footer/down_flash_pic.jpg?4.082" />
+        </a>
+    </div>
+    <div id="flash_text">
+        系统要求: 本站最佳浏览分辨率为1024x768
+        <br />
+        用户必须安装Flash 10 viewer或以上
+    </div>
+</footer>
+
+<script type="text/javascript">
+    $(function () {
+
+        if (global.isLogin) {
+            if (window.location.href.indexOf("sportsbook") < 0) {
+
+                messageJs.refreshAndPopup();
+            }
+            if (checkmaintenance(1)) {
+                $("#menuSportsbook").attr("target", "_self").attr("href", '/zh-cn/home/sportsbook');
+            }
+            if (checkmaintenance(12)) {
+                $("#menulottery").attr("target", "_blank").attr("href", '/zh-cn/home/BBINGame?type=5');
+            }
+            if (checkmaintenance(110)) {
+                $("#menuInstantwin").attr("target", "_self").attr("href", '/zh-cn/home/instantwin');
+            }
+        }
+        else {
+            $("#menulottery").click(LoginExD);
+            $("#menuSportsbook").attr("target", "_self").attr("href", '/zh-cn/home/sportsbook');
+            $("#menuInstantwin").attr("target", "_self").attr("href", '/zh-cn/home/instantwin');
+        }
+
+        $("#login_captcha").click(function () {
+            this.src = "/captcha/index?strWidth=100&strHeight=18&" + new Date().getTime();
+        });
+
+        $("#captcha").keypress(function (event) {
+            if (event.which == 13) {
+                $("#btnlogin").addClass('active');
+                $("#btnlogin").click();
+            }
+        });
+
+        $("#livechat,#contactLiveChat,#forgetPwdLiveChat").click(function () {
+            dialog.openWindow('https://server.iad.liveperson.net/hc/61815096/?cmd=file&amp;file=visitorWantsToChat&amp;site=61815096&amp;imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a/&amp;referrer=http%3A//co');
+        });
+
+        $("ul#loginmenu li").hover(function () {
+            $(this).find("span").css('display', 'block');
+        }, function () {
+            $(this).css({ 'background': 'none' });
+            $(this).find("span").hide();
+        });
+    });
+
+    $("#popMsg,#popMsg2").click(function () {
+        endmove();
+    });
+
+    function endmove() {
+        $("#popMsgInfo").removeClass("displayBlock");
+        $("#popMsgInfo").addClass("displayNone");
+    }
+
+    function LoginExD() {
+        alert('请先登陆，才能进行游戏.');
+        return;
+    }
+
+    function closemove() {
+        asfman.flyTo($('#start').position(), { left: 800, top: 37, width: 0, height: 0 }, 'start', 50, endmove);
+        $("#start").removeClass("displayBlock");
+        $("#start").addClass("displayNone");
+    }
+    function checkgame(gameid) {
+        if (global.isLogin) {
+            maintenance(gameid,'zh-cn');
+        }
+    }
+    //tools nav
+    $("#setindex").click(function () {
+
+        var url = 'http://www.sg988.com';
+        try {
+            this.style.behavior = "url(#default#homepage)";
+            this.setHomePage(url);
+        } catch (e) {
+            if (document.all) {
+                document.body.style.behavior = "url(#default#homepage)";
+                document.body.setHomePage(url);
+            } else if (window.sidebar) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为&#39;true&#39;,双击即可。");
+                        return false;
+                    }
+                }
+                var prefs = Components.classes["mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+                prefs.setCharPref('browser.startup.homepage', url);
+            } else {
+                alert('您的浏览器不支持自动设置首页, 使用浏览器菜单或在浏览器地址栏输入“chrome://settings/browser”手动设置!');
+            }
+        }
+        return false;
+    });
+    $("#addfavorite").click(function () {
+
+        if (document.all) {
+            window.external.addFavorite(document.location.href, document.title);
+        } else if (window.sidebar) {
+            window.sidebar.addPanel(document.title, document.location.href, "");
+        } else {
+            alert('您可以尝试通过快捷键ctrl + D 加入到收藏夹');
+        }
+        return false;
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10718789-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<!-- BEGIN LivePerson Monitor. --><script language='javascript'>                                      var lpMTagConfig = { 'lpServer': "server.iad.liveperson.net", 'lpNumber': "61815096", 'lpProtocol': (document.location.toString().indexOf('https:') == 0) ? 'https' : 'http' }; function lpAddMonitorTag(src) { if (typeof (src) == 'undefined' || typeof (src) == 'object') { src = lpMTagConfig.lpMTagSrc ? lpMTagConfig.lpMTagSrc : '/hcp/html/mTag.js'; } if (src.indexOf('http') != 0) { src = lpMTagConfig.lpProtocol + "://" + lpMTagConfig.lpServer + src + '?site=' + lpMTagConfig.lpNumber; } else { if (src.indexOf('site=') < 0) { if (src.indexOf('?') < 0) src = src + '?'; else src = src + '&'; src = src + 'site=' + lpMTagConfig.lpNumber; } }; var s = document.createElement('script'); s.setAttribute('type', 'text/javascript'); s.setAttribute('charset', 'iso-8859-1'); s.setAttribute('src', src); document.getElementsByTagName('head').item(0).appendChild(s); } if (window.attachEvent) window.attachEvent('onload', lpAddMonitorTag); else window.addEventListener("load", lpAddMonitorTag, false);</script><!-- END LivePerson Monitor. -->
+
+<script type="text/javascript">
+    setTimeout(function () {
+        var a = document.createElement("script");
+        var b = document.getElementsByTagName("script")[0];
+        a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0020/1225.js?" + Math.floor(new Date().getTime() / 3600000);
+        a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+    }, 1);
+</script>
+
+</body>
+</html>
